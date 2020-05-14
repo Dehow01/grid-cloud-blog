@@ -14,7 +14,7 @@ before_script:
   - npm install
   - cd ./server && npm install && cd ../
 script:
-  - npm test
+  - npm run test
   - cd ./server && npm run test && cd ../
 
 after_success:
