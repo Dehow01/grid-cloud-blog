@@ -10,7 +10,7 @@ export class LoginService {
   }
 
   validateLogin(user: User) {
-    return this.http.post('http://localhost:3000/api/user/login', {
+    return this.http.post('/api/user/login', {
       username: user.username,
       password: user.password
     });

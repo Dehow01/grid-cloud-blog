@@ -10,11 +10,11 @@ export class ShowPostService {
   }
 
   getAllPost() {
-    return this.http.post('/api/post/getAllPost', {});
+    return this.http.post('http://localhost:3000/api/post/getAllPost', {});
   }
 
   deletePost(id) {
-    return this.http.post('/api/post/deletePost', {id: id});
+    return this.http.post('http://localhost:3000/api/post/deletePost', {id: id});
   }
 
 }
