@@ -12,9 +12,8 @@ branches:
 before_script:
   - npm install -g firebase-tools
   - npm install
-  - cd ./server && npm install && cd ../
 script:
-  - cd ./server && npm run test && cd ../
+  - yarn all_tests
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
