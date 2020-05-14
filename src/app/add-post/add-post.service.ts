@@ -10,14 +10,14 @@ export class AddPostService {
   }
 
   addPost(post: Post) {
-    return this.http.post('/api/post/createPost', {
+    return this.http.post('http://localhost:3000/api/post/createPost', {
       title: post.title,
       description: post.description
     });
   }
 
   updatePost(post: Post) {
-    return this.http.post('/api/post/updatePost', {
+    return this.http.post('http://localhost:3000/api/post/updatePost', {
       id: post._id,
       title: post.title,
       description: post.description
