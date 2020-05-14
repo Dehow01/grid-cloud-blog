@@ -15,7 +15,6 @@ before_script:
 script:
   - npm test
   - ng build --prod
-
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
 
