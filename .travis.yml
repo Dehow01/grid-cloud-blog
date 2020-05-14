@@ -15,9 +15,7 @@ before_script:
   - cd ./functions && npm install && cd ../
 script:
   - npm test
-  - cd ./functions && npm run test && cd ../
-  - ng build --prod
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+
+
 
 
