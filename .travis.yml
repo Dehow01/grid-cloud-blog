@@ -14,7 +14,7 @@ before_script:
   - npm install
   - cd ./server && npm install && cd ../
 script:
-  - npm run test
+  - yarn all_tests
   - cd ./server && npm run test && cd ../
 
 after_success:
