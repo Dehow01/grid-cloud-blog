@@ -15,7 +15,6 @@ before_script:
   - cd ./server && npm install && cd ../
 script:
   - cd ./server && npm run test && cd ../
-  - yarn all_tests
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
