@@ -19,6 +19,6 @@
     "firebase-admin": "^8.12.1",
     "firebase-functions": "^3.6.1",
     "mocha": "^7.1.2",
-    "mongoose": "^4.13.6"
+    "mongoose": "^5.7.5"
   }
 }
