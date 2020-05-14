@@ -12,4 +12,28 @@ describe('LoginService', () => {
     const service: ShowPostService = TestBed.get(ShowPostService);
     expect(service).toBeTruthy();
   });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
+  it('', () => {
+    const service: ShowPostService = TestBed.get(ShowPostService);
+    expect(service).toBeTruthy();
+  });
 });
