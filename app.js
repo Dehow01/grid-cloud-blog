@@ -52,19 +52,7 @@ app.post('/api/post/updatePost', (req, res) => {
 });
 
 
-app.post('/api/post/deletePost', (req, res) => {
-  mongoose.connect(url, {useMongoClient: true}, function (err) {
-    if (err) throw err;
-    Post.findByIdAndRemove(req.body.id,
-      (err, doc) => {
-        if (err) throw err;
-        return res.status(200).json({
-          status: 'success',
-          data: doc
-        })
-      })
-  });
-});
+
 
 app.post('/api/post/getAllPost', (req, res) => {
   mongoose.connect(url, {useMongoClient: true}, function (err) {
@@ -95,7 +83,19 @@ app.post('/api/user/create', (req, res) => {
     })
   });
 });
-
+app.post('/api/post/deletePost', (req, res) => {
+  mongoose.connect(url, {useMongoClient: true}, function (err) {
+    if (err) throw err;
+    Post.findByIdAndRemove(req.body.id,
+      (err, doc) => {
+        if (err) throw err;
+        return res.status(200).json({
+          status: 'success',
+          data: doc
+        })
+      })
+  });
+});
 app.post('/api/post/createPost', (req, res) => {
   mongoose.connect(url, {useMongoClient: true}, function (err) {
     if (err) throw err;
